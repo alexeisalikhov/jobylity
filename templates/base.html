@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+.bg-1 {
+  background-color: #40bf80;
+  color: #e6ffcc;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.bg-2 {
+  background-color: #e6ffcc;
+  color: #206040;
+  padding-top: 40px;
+  padding-bottom: 200px;
+}
+.bg-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #40bf80;
+  color: #e6ffcc;
+}
+.motto {
+  padding-top: 60px;
+}
+</style>
+{% block head %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="static/images/jobylicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>{% block title %}{% endblock %}Jobylity</title>
+{% endblock %}
+</head>
+<body>
+{% block fluid %}{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
+</body>
+</html>

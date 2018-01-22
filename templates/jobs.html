@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block fluid %}
+<div class="container-fluid bg-3 text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="/" title="jobylity">
+        <img src="static/images/Jobylity_sm.png" class="img-circle" alt="jobylity">
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container-fluid bg-2">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
+      <h4>Current career opportunities:</h4>
+      <br />
+      <div class="list-group">
+      {% for job, ad in jobs %}
+          <a href="{{ ad }}" class="list-group-item list-group-item-info">{{ job }}</a>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block footer %}{% endblock %}

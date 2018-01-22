@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block fluid %}
+<div class="container-fluid bg-1 text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="static/images/Jobylity.png" class="img-circle" alt="jobylity">
+    </div>
+    <div class="col-sm-4 motto">
+      <h2>Jinja Empowered Jobylon</h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container-fluid bg-2">
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
+      <h4>Find your new dream position!</h4>
+      <p>
+        Jobylity is a simple responsive web application that facilitates keeping track of
+        job opportunities provided by Jobylon. When you click on "List jobs" button
+        below you will be presented with a list of job titles. Choose the one that
+        matches your desires and proceed to the job description.
+      </p>
+      <form action="/jobs" method="get">
+        <button type="submit" class="btn btn-info btn-block">
+          <span class="glyphicon glyphicon-list"></span> List jobs
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block footer %}{% endblock %}
